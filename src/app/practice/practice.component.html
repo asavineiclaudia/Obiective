@@ -1,0 +1,25 @@
+<div class="content">
+    <h1>Cats List</h1>
+    <section class="container breed-list">
+        <article class="breed">
+            <div class="col-sm-12 text-center">
+                <button (click)="getAllCats()" type="button" class="btn btn-primary btn-lg">Next cat!!!</button>
+            </div>
+            <div *ngIf="catsInfo">
+                <img [src]="image" />
+            </div>
+        </article>
+
+        <article class="breed">
+            <div class="col-sm-12 text-center">
+                <button (click)="promisesCats()" type="button" class="btn btn-primary btn-lg">I promise you!!!</button>
+            </div>
+            <div *ngIf="catsPromis">
+                <img [src]="promiseImg" />
+            </div>
+        </article>
+    </section>
+</div>
+
+
+
